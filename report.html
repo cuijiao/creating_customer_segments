@@ -11804,7 +11804,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 检查你的Python版本</span>
@@ -11820,7 +11820,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 引入这个项目需要的库</span>
@@ -11876,7 +11876,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 显示数据集的一个描述</span>
@@ -12019,7 +12019,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：从数据集中选择三个你希望抽样的数据点的索引</span>
@@ -12165,7 +12165,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：为DataFrame创建一个副本，用&#39;drop&#39;函数丢弃一个特征</span>
@@ -12204,7 +12204,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>回答:</strong>尝试预测的是Fresh，预测得分是-0.25。这个特征对于区分用户的消费习惯没有必要。因为score的结果是一个负值，表示模型不能够拟合数据。</p>
+<p><strong>回答:</strong>尝试预测的是Fresh，预测得分是-0.25。在删除了Fresh特征后，如果预测得分是一个正值，且接近1，说明选择的决策树回归器可以很好的拟合当前的数据，也就是说Fresh特征可以被其他特征预测，那么此时Fresh对于区分用户消费习惯是没有必要的，但是现在得到的是一个负值，所以说Fresh这个特征对于区分用户的消费习惯是有必要的。</p>
 
 </div>
 </div>
@@ -12220,7 +12220,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 对于数据中的每一对特征构造一个散布矩阵</span>
@@ -14069,7 +14069,7 @@ DMMwDMMwjCny/wF2eAYjCf/r7QAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：使用自然对数缩放数据</span>
@@ -18176,7 +18176,7 @@ MBgMBsOmwDg/BoPBYDAYDAaDYVNgnB+DwWAwGAwGg8GwKfi/tBsM3KOlZsQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 展示经过对数变换后的样本数据</span>
@@ -18283,7 +18283,7 @@ MBgMBsOmwDg/BoPBYDAYDAaDYVNgnB+DwWAwGAwGg8GwKfi/tBsM3KOlZsQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 对于每一个特征，找到值异常高或者是异常低的数据点</span>
@@ -19080,7 +19080,7 @@ MBgMBsOmwDg/BoPBYDAYDAaDYVNgnB+DwWAwGAwGg8GwKfi/tBsM3KOlZsQAAAAASUVORK5CYII=
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
 <p>异常点：65，66，75，128，154。</p>
-<p>应该从数据集中移除这些异常点，因为这些点有可能会产生过拟合，从而影响分类器的预测结果</p>
+<p>应该从数据集中移除这些多于一个特征下被看做是异常的数据点，因为这些点有可能会产生过拟合，从而影响分类器的预测结果；但是在一个特征下发现的异常点有可能是远离样本空间中心的点的高杠杆点，不一定是异常点，所以可以保留。</p>
 
 </div>
 </div>
@@ -19110,7 +19110,7 @@ MBgMBsOmwDg/BoPBYDAYDAaDYVNgnB+DwWAwGAwGg8GwKfi/tBsM3KOlZsQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：通过在good_data上使用PCA，将其转换成和当前特征数一样多的维度</span>
@@ -19469,7 +19469,7 @@ CyZJkiRJ6rBgkiRJkqSO/wUmsGpjgOjg6AAAAABJRU5ErkJggg==
 <p><strong>回答:</strong></p>
 <p>数据的第一个和第二个主成分总共表示了0.71的方差</p>
 <p>前四个主成分总共表示了0.93的方差</p>
-<p>在这里我考虑权重大于0.4为重要，在前4个重要成分中，只有Frozen和Delicatessen表现出正权，所以我认为前四个主要成分的消费行为代表餐厅行业客户。</p>
+<p>在这里我考虑权重大于0.4为重要，第一个主成分在detergents_paper, milk和grocery上有很大的权重, 它可能代表零售商；第二个主成分在Fresh, Frozen和Delicatessen上有很大的权重，它可能代表饭店；第三个主成分在Fresh, Frozen和Delicatessen上有很大的权重，它可能代表饭店；第四个主成分在Frozen和Delicatessen上有很大的权重，它可能代表小吃店。</p>
 
 </div>
 </div>
@@ -19485,7 +19485,7 @@ CyZJkiRJ6rBgkiRJkqSO/wUmsGpjgOjg6AAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 展示经过PCA转换的sample log-data</span>
@@ -19589,7 +19589,7 @@ CyZJkiRJ6rBgkiRJkqSO/wUmsGpjgOjg6AAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：通过在good data上进行PCA，将其转换成两个维度</span>
@@ -19621,7 +19621,7 @@ CyZJkiRJ6rBgkiRJkqSO/wUmsGpjgOjg6AAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 展示经过两个维度的PCA转换之后的样本log-data</span>
@@ -19704,7 +19704,7 @@ CyZJkiRJ6rBgkiRJkqSO/wUmsGpjgOjg6AAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -19721,13 +19721,13 @@ CyZJkiRJ6rBgkiRJkqSO/wUmsGpjgOjg6AAAAABJRU5ErkJggg==
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[50]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1137d3e50&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11856df10&gt;</pre>
 </div>
 
 </div>
@@ -20830,8 +20830,8 @@ TkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
-<p>K-Means聚类算法的优点是简单、速度快</p>
-<p>高斯混合模型聚类算法的优点是用高斯概率密度函数精确地量化事物，收敛速度快、能扩展以用于大规模的数据集</p>
+<p>K-Means聚类算法的优点是简单、速度快，它的聚类结果是绝对的硬聚类</p>
+<p>高斯混合模型聚类算法的优点是用高斯概率密度函数精确地量化事物，收敛速度快、能扩展以用于大规模的数据集，它的聚类结果是以概率的形式表示数据点属于哪一类的软聚类</p>
 <p>因为在使用特征缩放后，虽然6个特征表现的更加的正态分布，但仍然不是标准的正态分布，选用K-Means聚类算法</p>
 
 </div>
@@ -20859,7 +20859,7 @@ TkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：在降维后的数据上使用你选择的聚类算法</span>
@@ -20939,7 +20939,7 @@ TkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 从已有的实现中展示聚类的结果</span>
@@ -21607,7 +21607,7 @@ oRACAAAA0HEohAAAAAB0HAohAAAAAB3n/wF0HdrQYWnGRwAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：反向转换中心点</span>
@@ -21727,7 +21727,7 @@ oRACAAAA0HEohAAAAAB0HAohAAAAAB3n/wF0HdrQYWnGRwAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 显示预测结果</span>
@@ -21765,7 +21765,11 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
-<p>我之前的预测是point0应该对应在segment0，point1和point2对应在segment1，但是从预测结果来看point1被分类到segment0中。</p>
+<p>通过比较3个样本点和问题8中计算出的两个cluster的中心点：</p>
+<p>样本点0中Milk和Delicatessen超过统计结果中的75%，属于显著消费，应该归类于segment1中</p>
+<p>样本点1中Grocery和Detergents_Paper超过统计结果中的75%，属于显著消费，应该归类于segment1中</p>
+<p>样本点2中Milk、Grocery、Frozen和Delicatessen超过统计结果中的75%，属于显著消费，应该归类于segment0中</p>
+<p>通过运行上面的代码，我的预测结果和现在的运行结果相符。</p>
 
 </div>
 </div>
@@ -21796,7 +21800,7 @@ Sample point 2 predicted to be in Cluster 0
 <p><strong>回答：</strong></p>
 <p>在可视化聚类的结果中我们可以看到两个cluster中间有一条模糊的分割线，因为批发商考虑只对有积极反馈的客户实施新的派送策略，所以应该考虑在segment1中距离这条模糊分割线越远的点，积极反馈的概率越大。</p>
 <p>A/B测试实现方法：</p>
-<p>1.把segment1中的点按照到segment0中心点的距离分为两类</p>
+<p>1.把segment1中的点按照到segment0中心点的距离分为两类，把距离segment0近的一类做为参考组，距离segment0远的一类实验组</p>
 <p>2.把距离segment0近点的一类实施一周五次的配送策略，把距离segment0远一类实施一周三次的配送策略</p>
 <p>最后可以发现，在segment1中距离segment0远的点对一周三次的配送策略有积极的反馈</p>
 
@@ -21815,7 +21819,7 @@ Sample point 2 predicted to be in Cluster 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -21871,7 +21875,8 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答：</strong></p>
-<p>如果预估和非监督学习的结果是一致的，说明这个分类的正确的；如果预估和非监督学习的结果不一致，最好是参考非监督学习的结果来进行预测。</p>
+<p>我们可以看到存在聚类特征'cluster'的预测得分比不存在聚类特征的最终的得分要高一些。</p>
+<p>这里使用了非监督学习的结果，把它当作一个新的特征'cluster'提供给监督学习，这个工程特征提高了监督学习（random forest分类器）的表现，所以在以后可以像例子中这样非监督学习与监督学习一起结合使用，最终提高监督学习的预测准确性。</p>
 
 </div>
 </div>
@@ -21888,7 +21893,7 @@ Sample point 2 predicted to be in Cluster 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 根据‘Channel‘数据显示聚类的结果</span>
